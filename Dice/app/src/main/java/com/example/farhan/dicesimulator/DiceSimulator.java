@@ -134,7 +134,7 @@ public class DiceSimulator extends AppCompatActivity {
         if (findViewById(R.id.fragment) != null) {
             diceFragment = DiceFragment.newInstance(actualNumer, FACES);
             fragmentTransaction = getFragmentManager().beginTransaction();
-            fragmentTransaction.setCustomAnimations(R.animator.slide_linear_left, R.animator.slide_linear_right);//right
+            fragmentTransaction.setCustomAnimations(R.animator.slide_linear_left, R.animator.slide_linear_right);//left
             fragmentTransaction.replace(R.id.fragment, diceFragment);
             fragmentTransaction.commit();
             addSimulation();
@@ -158,7 +158,7 @@ public class DiceSimulator extends AppCompatActivity {
         if (findViewById(R.id.fragment) != null) {
             diceFragment = DiceFragment.newInstance(actualNumer, FACES);
             fragmentTransaction = getFragmentManager().beginTransaction();
-            fragmentTransaction.setCustomAnimations(R.animator.slide_linear_from_down, R.animator.slide_linear_to_up);//right
+            fragmentTransaction.setCustomAnimations(R.animator.slide_linear_from_down, R.animator.slide_linear_to_up);//up
             fragmentTransaction.replace(R.id.fragment, diceFragment);
             fragmentTransaction.commit();
             addSimulation();
@@ -170,7 +170,7 @@ public class DiceSimulator extends AppCompatActivity {
         if (findViewById(R.id.fragment) != null) {
             diceFragment = DiceFragment.newInstance(actualNumer, FACES);
             fragmentTransaction = getFragmentManager().beginTransaction();
-            fragmentTransaction.setCustomAnimations(R.animator.slide_linear_down, R.animator.slide_linear_up);//right
+            fragmentTransaction.setCustomAnimations(R.animator.slide_linear_down, R.animator.slide_linear_up);//down
             fragmentTransaction.replace(R.id.fragment, diceFragment);
             fragmentTransaction.commit();
             addSimulation();
